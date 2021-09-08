@@ -1,6 +1,9 @@
-/Data/
-/Preprocessed_data_sequences/
-/Text_datasets_GPT2/
-/Text_datasets_joined_strings/
-/GPT2_model/
-/Mogrifier
+/Data/SourceData/
+/Data/Preprocessed_data_sequences/
+/Data/Text_datasets_GPT2/
+/Data/Text_datasets_joined_strings/
+/GPT2/GPT2_model/
+/AttentiveLM/models/
+/AttentiveLM/runs/
+/AttentiveLM/.data/
+/BasicLSTMModel/WordModel/Model/
