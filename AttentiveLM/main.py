@@ -18,6 +18,10 @@ from utils import generate_filename, save_attention_visualization, get_dataset
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 
+def count_parameters(model):
+    return sum(p.numel() for p in model.parameters() if p.requires_grad)
+
+
 def main(args):
     # Training settings
     parser = argparse.ArgumentParser(
@@ -114,6 +118,8 @@ def main(args):
         args.parallel = False
 
     model.to(device)
+    print(str(model))
+    print(count_parameters(model))
 
     # Training Set Up
     if args.optim == 'sgd':
